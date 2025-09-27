@@ -1,0 +1,61 @@
+# ===================================================================
+#  ARQUIVO .GITIGNORE PARA APLICAÇÕES REACTJS
+#  Gerado em Setembro de 2025
+# ===================================================================
+
+# -- Dependências --
+# A pasta node_modules contém milhares de pacotes de terceiros.
+# Ela é recriada automaticamente ao rodar "npm install" ou "yarn".
+# É a pasta mais importante a ser ignorada.
+/node_modules
+
+# -- Arquivos de Build e Produção --
+# Essas pastas contêm o código final, otimizado e compilado, que vai para o servidor.
+# Elas são geradas pelo processo de build (ex: "npm run build").
+/build
+/dist
+/.out
+/.next
+
+# -- Logs de Erro e Debug --
+# Arquivos de log gerados pelo npm, yarn, etc.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -- Arquivos de Variáveis de Ambiente Locais --
+# ESSENCIAL PARA SEGURANÇA! Estes arquivos contêm chaves de API, senhas de banco de dados
+# e outras informações sensíveis que NUNCA devem ir para o repositório.
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local.example # Às vezes usado para exemplos, mas melhor ignorar
+
+# -- Testes --
+# Pasta com os relatórios de cobertura de testes.
+/coverage
+
+# -- Arquivos de Sistema Operacional --
+# Arquivos gerados automaticamente pelo sistema operacional.
+.DS_Store
+Thumbs.db
+
+# -- Configurações de Editores e IDEs --
+# Pastas e arquivos com configurações pessoais do seu editor de código.
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# -- Arquivos de Cache e Temporários --
+# Gerados por ferramentas de build e pacotes.
+.eslintcache
+.vite/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
